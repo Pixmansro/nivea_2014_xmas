@@ -1,0 +1,39 @@
+{block content}
+<div class="part1">
+	<div class="status">
+		<span class="circle burn">&nbsp;</span>
+		<span class="line"></span>
+		<span class="circle full">2</span>
+		<span class="line"></span>
+		<span class="circle">3</span>
+		<span class="line"></span>
+		<span class="circle">4</span>
+	</div>
+</div>
+<div class="part2">
+	<div class="quiz">
+		<h1 class="h2">2. týden</h1>
+		<p class="fs22">Jako každý rok můžete pro své blízké vybírat ze mnoha variant
+			<br>dárkových balení nejoblíbenějších výrobků NIVEA.</p>
+		<strong>Tipněte si, z kolika druhů balíčků letos můžete vybírat?</strong>
+		<p>Správná odpověď rozsvítí vaši druhou adventní svíčku.</p>
+	</div>
+	<div class="questions">
+		{form questionTwoForm}
+			<fieldset class="body">
+				{foreach $form['quizTwo']->items as $key => $label}
+					<div class="block-inline">
+						<input n:name="quizTwo:$key">
+						<label n:name="quizTwo:$key" class="_{$iterator->counter}">{$label}<span class="btn-xlg">{$key}</span></label>
+					</div>
+				{/foreach}
+			</fieldset>
+			<fieldset class="send">
+				{input send}
+				<div class="line"></div>
+			</fieldset>
+		{/form}
+	</div>
+
+</div>
+{/block}

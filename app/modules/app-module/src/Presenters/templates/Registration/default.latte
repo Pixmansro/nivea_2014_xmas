@@ -1,0 +1,50 @@
+{block content}
+<div class="part1">
+</div>
+<div class="part2">
+	<div class="info">
+		<h1 class="h2">{_zaregistrujte_se}</h1>
+		<p class="fs14">{_popis_registrace}</p>
+	</div>
+
+	{form registrationForm}
+		<fieldset class="register">
+			<span class="clearfix">
+				{input gender}
+				<span class="right">
+					{input firstname}
+					{input lastname}
+				</span>
+			</span>
+			<span class="clearfix">
+				{input email}
+				<span class="right">
+					{input day}
+					{input month}
+					{input year}
+				</span>
+			</span>
+			<span class="clearfix">
+				{input street}
+				{input strno}
+				<span class="right">
+					{input zip}
+					{input city}
+				</span>
+			</span>
+			<span class="clearfix color-primary">{_povinná_pole}</span>
+			<span class="clearfix">
+				{input privacy}
+			</span>
+			<span class="clearfix">
+				{input newsletter}
+			</span>
+		</fieldset>
+		<fieldset class="send">
+			{input send}
+			<div class="line"></div>
+		</fieldset>
+	{/form}
+</div>
+<div class="part3"></div>
+{/block}
