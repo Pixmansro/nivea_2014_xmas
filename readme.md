@@ -4,7 +4,7 @@ Nivea 2014 Christmas
 Install application:
 -------
 
-gitHub → download .zip
+download .zip
 
     cd Nivea2014Christmas
     php composer.phar self-update
