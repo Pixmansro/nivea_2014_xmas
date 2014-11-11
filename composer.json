@@ -1,5 +1,5 @@
 {
-    "name": "kampane/vanocni-soutez",
+    "name": "pixman/vanocni-soutez",
     "description": "Vánoční soutěž",
     "minimum-stability": "stable",
     "keywords": ["devrun"],
@@ -7,8 +7,7 @@
     "authors": [
         {
             "name": "Pixman s.r.r.",
-            "email": "podpora@pixman.cz",
-            "www": "http://www.pixman.cz"
+            "email": "podpora@pixman.cz"
         }
     ],
     "require": {
